@@ -1,0 +1,108 @@
+header {
+    height: 80px;
+    background-color: rgba(51, 51, 51, 255);
+    color: white;
+}
+
+nav {
+    padding: 5px 40px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+#nav-right {
+    gap: 8px;
+}
+
+input,
+button {
+    text-align: center;
+    border-radius: 5px;
+}
+
+#menu {
+    display: none;
+}
+
+main {
+    height: calc(100vh - 80px);
+}
+
+aside {
+    width: 400px;
+    background-color: rgba(211, 211, 211, 255);
+    padding: 15px 0;
+    gap: 60px;
+    color: white;
+}
+
+#aside-header {
+    gap: 9px;
+}
+
+#profile-picture {
+    background-color: white;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+aside a:hover {
+    background-color: rgba(148, 148, 148, 255);
+}
+
+main>section {
+    width: calc(100vw - 400px);
+    padding: 40px 0;
+    gap: 15px;
+    height: 50%;
+}
+
+.box {
+    background-color: rgba(148, 148, 148, 255);
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 1270px) {
+    aside {
+        display: none !important;
+    }
+
+    main>section {
+        width: 100%;
+        justify-content: space-evenly !important;
+        -webkit-justify-content: space-evenly !important;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 630px) {
+
+    input,
+    button {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
